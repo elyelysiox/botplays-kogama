@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(100deg, #333333, #030303);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.main-container {
+    display: flex;
+    gap: 2rem; /* Espacio entre terminal y formulario */
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.login-container {
+    background: #0d0d0d;
+    color: #333;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.logo {
+    width: 200px; // Ajusta el tamaño del logo
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.login-container h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #a3a3a3;
+}
+
+.terminal {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height: 540px;
+    overflow-y: auto;
+    font-family: monospace;
+}
+
+.terminal p {
+    margin: 0;
+    white-space: pre-wrap;
+    line-height: 1.5;
+}
+
+
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #a3a3a3;
+}
+
+.login-container p {
+    margin-bottom: 1rem;
+    color: #a3a3a3;
+}
+
+.login-container input {
+    width: calc(100% - 2rem);
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-container input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.login-container button {
+    width: calc(100% - 2rem);
+    padding: 0.75rem;
+    background: #6c5ce7;
+    color: #a3a3a3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+/* Estilo para el contenedor del checkbox */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0; /* Separación con otros elementos */
+    padding-left: 1.2rem; /* Mueve el checkbox hacia la derecha */
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 0.5rem; /* Espacio entre el checkbox y el texto */
+    transform: scale(1.2        ); /* Aumenta el tamaño del checkbox */
+    cursor: pointer;
+}
+
+.checkbox-container label {
+    font-size: 1rem;
+    color: #a3a3a3;
+    cursor: pointer; /* Cambia el puntero al pasar sobre el texto */
+}
+
+.login-container button:hover {
+    background: #5a4fcf;
+}
+
+.login-container .footer {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.login-container .footer a {
+    color: #a3a3a3;
+    text-decoration: none;
+}
+
+.login-container .footer a:hover {
+    text-decoration: underline;
+}
